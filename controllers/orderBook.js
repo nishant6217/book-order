@@ -8,7 +8,7 @@ module.exports.orderBook = async (req, res) => {
         success: false,
         message: "book id required"
       });
-    };
+    }
     if (maxLimit && maxLimit.length > 10) {
       return res.status(400).json({
         success: false,
@@ -49,13 +49,13 @@ module.exports.orderBook = async (req, res) => {
             success: false,
             message: "error in creating order"
           });
-        };
+        }
       } else {
         return res.status(400).json({
           success: false,
           message: "books data not present"
         });
-      };
+      }
     }
   } catch (error) {
     console.log("error in creating order", error);

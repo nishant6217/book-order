@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 
+// eslint-disable-next-line no-undef
 mongoose.connect(process.env.MONGOURI);
  
 const db = mongoose.connection;
