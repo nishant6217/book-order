@@ -31,6 +31,7 @@ npm start or node index.js
 ## How to use API (Understanding the end points)? (!!Important in understanding API)
 
 #### Base URL : `http://localhost:8000/book-website`
+#### Base URL heroku deployed : `https://book-order-api.herokuapp.com/book-website`
 
 #### End Points :
 
