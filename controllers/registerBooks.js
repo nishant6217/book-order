@@ -1,6 +1,12 @@
 const Book = require("../models/book")
 module.exports.register = async (req, res) => {
   try {
+    if (!req.body.id) {
+      return res.status(400).json({
+        success: false,
+        message: "Book Id required",
+      });
+    }
     let bookDetail = await Book.findOne({ id: req.body.id });
 
     if (bookDetail) {

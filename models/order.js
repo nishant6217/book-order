@@ -17,7 +17,11 @@ const orderSchema = mongoose.Schema(
         books :[{
             type: String,
             required:true
-        }]
+        }],
+        totalQuantity : {
+            type : Number,
+            required:true
+        }
     },
     {
         timestamps: true,
